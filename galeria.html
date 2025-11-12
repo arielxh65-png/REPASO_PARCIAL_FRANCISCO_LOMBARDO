@@ -1,58 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galería | Francisco Lombardo</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Creativa - Mis Proyectos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Galería de Proyectos</h1>
-      <p class="subtitle">Proyectos iniciales de desarrollo frontend</p>
-    </header>
-
-    <section class="gallery">
-      <div class="gallery-grid">
-        <div class="gallery-item animation-3">
-          <div class="image-container">
-            <img src="https://picsum.photos/seed/frontend1/800/500" alt="Landing Page Responsive">
-          </div>
-          <h3>Landing Page Responsive</h3>
-          <div class="description-overlay">
-            <p>Diseño y desarrollo de una landing page adaptable a dispositivos móviles utilizando HTML y CSS con media queries.</p>
-          </div>
-        </div>
-
-        <div class="gallery-item animation-3">
-          <div class="image-container">
-            <img src="https://picsum.photos/seed/frontend2/800/500" alt="Componentes Reutilizables">
-          </div>
-          <h3>Componentes Reutilizables</h3>
-          <div class="description-overlay">
-            <p>Implementación de componentes reutilizables en HTML y CSS, con interacción básica mediante JavaScript.</p>
-          </div>
-        </div>
-
-        <div class="gallery-item animation-3">
-          <div class="image-container">
-            <img src="https://picsum.photos/seed/frontend3/800/500" alt="Portafolio Personal">
-          </div>
-          <h3>Portafolio Personal</h3>
-          <div class="description-overlay">
-            <p>Creación de un portafolio profesional simple, destacando proyectos, experiencia y redes sociales.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="footer-content">
-        <p>© 2025 Francisco Lombardo - Desarrollador Web</p>
-      </div>
-    </footer>
-  </div>
-  <script src="https://kit.fontawesome.com/a2d0b5a3e4.js" crossorigin="anonymous"></script>
+    <div class="container">
+        <header>
+            <h1>Galería Creativa</h1>
+            <div class="button-container">
+                <a href="index.html" class="animated-btn">
+                    <i class="fas fa-home"></i> Inicio
+                </a>
+                <a href="perfil.html" class="animated-btn">
+                    <i class="fas fa-user"></i> Perfil
+                </a>
+                <a href="blog.html" class="animated-btn">
+                    <i class="fas fa-blog"></i> Blog
+                </a>
+            </div>
+        </header>
+        
+        <main>
+            <section class="gallery-intro">
+                <h2>Mis Proyectos Destacados</h2>
+                <p>Una selección de mis trabajos más representativos, cada uno con su propia personalidad y animación única.</p>
+            </section>
+            
+            <section class="gallery">
+                <div class="gallery-grid">
+                    <div class="gallery-item animation-3">
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=400&h=300&fit=crop" alt="Interfaz React">
+                        </div>
+                        <h3>Aplicación React</h3>
+                        <div class="description-overlay">
+                            <p>Dashboard administrativo desarrollado con React, hooks personalizados y consumo de APIs REST para gestión de datos en tiempo real.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item animation-3">
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop" alt="App Móvil">
+                        </div>
+                        <h3>App de Productividad</h3>
+                        <div class="description-overlay">
+                            <p>Aplicación móvil responsive construida con HTML5, CSS3 y JavaScript vanilla, implementando Progressive Web App features.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item animation-3">
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=300&fit=crop" alt="E-commerce">
+                        </div>
+                        <h3>Tienda Online</h3>
+                        <div class="description-overlay">
+                            <p>Plataforma de e-commerce con carrito de compras dinámico, validación de formularios y diseño mobile-first usando Flexbox y Grid.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
