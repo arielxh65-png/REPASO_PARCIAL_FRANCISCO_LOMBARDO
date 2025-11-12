@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal - Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bienvenido a Mi Portafolio</h1>
+            <p class="subtitle">Desarrollador Web & Diseñador Creativo</p>
+        </header>
+        
+        <main>
+            <section class="description">
+                <h2>Explora Mi Mundo Digital</h2>
+                <p>Descubre mis proyectos, experiencia profesional y pasiones a través de estas páginas interactivas. Cada sección ofrece una perspectiva única de mi trayectoria y habilidades.</p>
+            </section>
+            
+            <section class="buttons-section">
+                <h3>Navegación</h3>
+                <div class="button-container">
+                    <a href="perfil.html" class="animated-btn btn-1">
+                        <i class="fas fa-user"></i>
+                        Perfil Profesional
+                    </a>
+                    <a href="galeria.html" class="animated-btn btn-2">
+                        <i class="fas fa-images"></i>
+                        Galería Creativa
+                    </a>
+                    <a href="blog.html" class="animated-btn btn-3">
+                        <i class="fas fa-blog"></i>
+                        Blog Personal
+                    </a>
+                </div>
+            </section>
+            
+            <section class="pages-description">
+                <h3>Contenido de las Páginas</h3>
+                <div class="page-info">
+                    <h4><i class="fas fa-user-tie"></i> Perfil Profesional</h4>
+                    <p>Conoce mi trayectoria profesional, experiencia laboral y habilidades técnicas. Incluye mi biografía, historial académico y formas de contacto.</p>
+                </div>
+                <div class="page-info">
+                    <h4><i class="fas fa-camera"></i> Galería Creativa</h4>
+                    <p>Una colección visual de mis proyectos más destacados, cada uno con animaciones únicas y descripciones interactivas.</p>
+                </div>
+                <div class="page-info">
+                    <h4><i class="fas fa-pen-fancy"></i> Blog Personal</h4>
+                    <p>Comparto mis intereses personales, ciudades favoritas, equipos deportivos y pasiones culinarias con enlaces a recursos externos.</p>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2024 <strong>Carlos Rodríguez</strong> - Desarrollador Web</p>
+                <p id="fecha-actual"></p>
+            </div>
+        </footer>
+    </div>
+    
+    <script>
+        // Actualizar fecha automáticamente
+        function actualizarFecha() {
+            const fecha = new Date();
+            const opciones = { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                weekday: 'long'
+            };
+            document.getElementById('fecha-actual').textContent = 
+                fecha.toLocaleDateString('es-ES', opciones);
+        }
+        
+        document.addEventListener('DOMContentLoaded', actualizarFecha);
+    </script>
+</body>
+</html>
